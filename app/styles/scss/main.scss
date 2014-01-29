@@ -5,8 +5,6 @@
 $fa-font-path: "../bower_components/font-awesome/fonts";
 @import '../../bower_components/font-awesome/scss/font-awesome';
 
-// Header
-@import 'header-comp2';
 // Defaults
 @import 'defaults';
 
@@ -16,3 +14,55 @@ $fa-font-path: "../bower_components/font-awesome/fonts";
 
 // Add your code here or create a _*.scss file and import it
 // e.g., @import 'project'
+
+.timeline {
+  list-style-type: none;
+  margin-top: 50px;
+  font-size: 0.75em; 
+  height: 10em;
+
+  li {
+    height: 8em;
+    position: relative;
+    float: left;
+    width: 1.5em; 
+    margin: 0 0.1em;
+
+    &:hover {
+      background: rgb(239, 239, 239);
+    }
+
+    .label {
+      display: block; 
+      position: absolute; 
+      bottom: -2em; 
+      line-height: 2em;
+      left: 0;
+      width: 100%;
+      text-align: center;
+    }
+
+    a {
+      display: block;
+      height: 100%;
+
+      &:hover {
+        .count {
+          background: rgb(45, 123, 178);
+        }
+      }
+
+      .count {
+        display: block; 
+        position: absolute; 
+        bottom: 0; 
+        left: 0; 
+        text-indent: -9999px; 
+        overflow: hidden;
+        width: 100%; 
+        height: 0;
+        background: #AAA; 
+      }
+    }
+  }
+}
