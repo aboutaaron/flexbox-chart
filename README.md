@@ -4,7 +4,7 @@ Inspired by Wilson Miner's excellent 2008 article ["Accessbile Data Visualizatio
 
 Original timeline: [Miner's Timeline chart](http://alistapart.com/d/accessibledata/example-timeline.html)
 
-Flexbox version: [Flexbox Timeline Chart](http://aboutaaron.com/flexbox-chart/). Currently a work in progress.
+Flexbox version: [Flexbox Timeline Chart](http://aboutaaron.com/flexbox-chart/). Resize the browser window to see flexbox in action. 
 
-Read my accompanying article [here](#) (_coming soon_).
+This repo is currently a work in progress. Read my accompanying article [here](#) (_coming soon_).
 
