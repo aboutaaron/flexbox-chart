@@ -1,0 +1,1 @@
+"use strict";var App=App||{};jQuery(document).ready(function(a){var b=a(".timeline").find(".bar");a.each(b,function(b,c){var d=a(c).find("a").height(),e=a(c).find("a .count").height();a(c).find(".count").css("margin-top",d-e)})});
