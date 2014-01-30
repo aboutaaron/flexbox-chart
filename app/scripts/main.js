@@ -3,6 +3,12 @@
 var App = App || {};
 
 jQuery(document).ready(function($) {
-  console.log('You are ready to build a news app!');
-  $('#jquery-version').text($.fn.jquery);
+  var $bars = $('.timeline').find('.bar');
+
+  $.each($bars, function (index, bar) {
+    var barHeight = $(bar).find('a').height(),
+        dataHeight = $(bar).find('a .count').height();
+
+    $(bar).find('.count').css('margin-top', (barHeight - dataHeight));
+  });
 });
