@@ -198,6 +198,14 @@ module.exports = function (grunt) {
         }]
       }
     },
+    shell: {
+      ghPages: {
+        command: 'git subtree push --prefix dist origin gh-pages',
+        options: {
+          stdout: true
+        }
+      }
+    },
     jshint: {
       // define the files to lint
       files: ['Gruntfile.js', 'app/scripts/*.js'],
@@ -240,6 +248,10 @@ module.exports = function (grunt) {
     'copy',
     'rev',
     'usemin'
+  ]);
+
+  grunt.registerTask('deploy', [
+    'shell:ghPages'
   ]);
 
 }
