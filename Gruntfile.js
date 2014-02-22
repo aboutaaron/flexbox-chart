@@ -22,7 +22,7 @@ module.exports = function (grunt) {
       css: {
         
         files: ['app/styles/scss/*.scss'],
-        tasks: ['sass'],
+        tasks: ['sass', 'autoprefixer'],
       },
       src: {
         
@@ -185,6 +185,19 @@ module.exports = function (grunt) {
         ignorePath: ['app'],
       }
     },
+    autoprefixer: {
+      options: {
+        browsers: ['last 1 version']
+      },
+      dist: {
+        files: [{
+          expand: true,
+          cwd: '.tmp/styles/',
+          src: '{,*/}*.css',
+          dest: '.tmp/styles/'
+        }]
+      }
+    },
     jshint: {
       // define the files to lint
       files: ['Gruntfile.js', 'app/scripts/*.js'],
@@ -220,6 +233,7 @@ module.exports = function (grunt) {
     'clean:dist',
     'useminPrepare',
     //'concurrent:dist',
+    'autoprefixer',
     'cssmin',
     'concat',
     'uglify',
