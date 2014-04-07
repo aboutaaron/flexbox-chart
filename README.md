@@ -6,5 +6,5 @@ Original timeline: [Miner's Timeline chart](http://alistapart.com/d/accessibleda
 
 Flexbox version: [Flexbox Timeline Chart](http://aboutaaron.com/flexbox-chart/). Resize the browser window to see flexbox in action. 
 
-Read my accompanying article [here](http://blog.aboutaaron.com/accessible-data-visualization-with-flexbox/.
+Read my accompanying article [here](http://blog.aboutaaron.com/accessible-data-visualization-with-flexbox/).
 
